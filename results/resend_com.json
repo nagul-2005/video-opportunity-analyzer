@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "company_name": "Resend",
+  "website_url": "https://resend.com",
+  "existing_videos_found": true,
+  "existing_video_summary": "Detected 6 video element(s): Native HTML5 <video> element (src: /static/cube.mp4) on https://resend.com; Native HTML5 <video> element (src: /static/landing-page/3d-broadcast.mp4) on https://resend.com; Native HTML5 <video> element (src: /static/landing-page/3d-react.mp4) on https://resend.com; Native HTML5 <video> element (src: /static/landing-page/3d-control.mp4) on https://resend.com; Native HTML5 <video> element (src: /static/landing-page/3d-audience.mp4) on https://resend.com/features/audiences",
+  "suggestions": [
+    {
+      "video_type": "Developer Onboarding Explainer",
+      "placement": "Homepage hero section or 'Get started' section",
+      "rationale": "Resend emphasizes a 'first-class developer experience' and quick integration. A concise explainer video demonstrating the initial setup, SDK integration, and sending a first email would visually validate the ease of use, reducing friction for new developers and accelerating their journey from curiosity to active usage, complementing the existing code snippets.",
+      "observed_site_quote": "A simple, elegant interface so you can start sending emails in minutes. It fits right into your code with SDKs for your favorite programming languages."
+    },
+    {
+      "video_type": "Interactive Broadcast Editor Walkthrough",
+      "placement": "Broadcasts feature page (https://resend.com/features/broadcasts)",
+      "rationale": "The 'Broadcasts' page highlights a 'delightful editor' with extensive customization, personalization, and scheduling features. A video walkthrough would visually showcase the intuitive WYSIWYG interface, demonstrating how users can easily create, customize, and schedule marketing emails without code, making the feature's power and simplicity immediately apparent.",
+      "observed_site_quote": "Write emails using a delightful editor Create content without leaving the keyboard. Use one of the commands available, including Buttons, Social Links, Unsubscribe Footer, and more."
+    },
+    {
+      "video_type": "Customer Success Story",
+      "placement": "Homepage, Testimonials section, or Pricing page",
+      "rationale": "Resend features strong text testimonials from notable co-founders. Converting one of these into a video success story, particularly highlighting a key benefit like deliverability, would provide authentic social proof. Hearing a customer's positive experience directly builds trust and credibility more effectively than static text, addressing common pain points for potential B2B clients.",
+      "observed_site_quote": "\"Our team loves Resend. It makes email sending so easy and reliable. After we switched to Dedicated IPs, our deliverability improved tremendously and we don't hear complaints about emails landing on spam anymore. \" Vlad Matsiiako Co-founder of Infisical"
+    }
+  ],
+  "outreach_email": "Hi [Decision Maker Name],\n\nI'm [My Name] from [My Agency]. I'm impressed by Resend's \"Email for developers\" and \"first-class developer experience.\"\n\nYour site clearly communicates value, but I see an opportunity to boost clarity and conversion with targeted video, beyond your existing animations.\n\nConsider:\n1. A concise Developer Onboarding Explainer for quick integration, highlighting the \"simple, elegant interface.\"\n2. An Interactive Broadcast Editor Walkthrough demonstrating the \"delightful editor\" and personalization.\n3. A Customer Success Story featuring Infisical, bringing their \"deliverability improved tremendously\" quote to life.\n\nThese could significantly enhance engagement. Would you be open to a brief chat?\n\nBest,\n[My Name]",
+  "word_count": 101
+}

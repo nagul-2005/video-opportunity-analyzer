@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "company_name": "Streamlit",
+  "website_url": "https://streamlit.io",
+  "existing_videos_found": true,
+  "existing_video_summary": "Detected 2 video element(s): Native HTML5 <video> element (src: https://static.streamlit.io/videos/hero-video.mp4) on https://streamlit.io; Native HTML5 <video> element (src: https://static.streamlit.io/videos/streamlit_sharing_silent.mp4) on https://streamlit.io",
+  "suggestions": [
+    {
+      "video_type": "Interactive Feature Walkthrough",
+      "placement": "Below 'Embrace scripting' section or 'Get started' section",
+      "rationale": "The website describes Streamlit's core principles and shows a code snippet, but a visual demonstration of the 'magically simple API' and how 'adding a widget is the same as declaring a variable' would significantly clarify the ease of use and development speed for potential users, going beyond the high-level existing videos.",
+      "observed_site_quote": "Embrace scripting Build an app in a few lines of code with our magically simple API . Then see it automatically update as you iteratively save the source file. ... Weave in interaction Adding a widget is the same as declaring a variable ."
+    },
+    {
+      "video_type": "Customer Success Story",
+      "placement": "Below 'Trusted by over 90% of Fortune 50 companies' or on a dedicated 'Case Studies' page",
+      "rationale": "Streamlit boasts impressive social proof from Fortune 50 companies and top data science groups. While text testimonials are present, a video featuring a customer explaining their specific use case and the tangible benefits of Streamlit would provide far greater credibility and emotional connection, elevating the 'Trusted by' claim.",
+      "observed_site_quote": "Trusted by over 90% of Fortune 50 companies As of 2024-11-15 Used in the world’s top data science groups Neil Treat Google X “ Write production-level code while producing shareable artifacts. ”"
+    },
+    {
+      "video_type": "Onboarding / Getting Started Guide",
+      "placement": "Next to 'Get started in under a minute' section",
+      "rationale": "The website offers multiple paths to 'Get started' (local install, live playground, Community Cloud, Snowflake). A concise video demonstrating the initial steps for each option would visually guide new users, reduce decision friction, and clarify the best entry point for their needs more effectively than text instructions alone.",
+      "observed_site_quote": "Get started in under a minute Streamlit is an open-source app framework that is a breeze to get started with. ... Or you can skip local installation altogether: → Try a live playground in your browser ... → Build in public with Streamlit Community Cloud ... → Build like a pro on Snowflake"
+    }
+  ],
+  "outreach_email": "Hi [Decision Maker Name],\n\nI'm [Your Name] from [Your Agency]. Streamlit's ability to turn Python scripts into apps is impressive, and I noted your existing videos.\n\nTo further engage developers and drive conversions, I've identified three high-impact video opportunities:\n\n1.  Interactive Feature Walkthrough: Visually demonstrate your \"magically simple API\" and \"weave in interaction\" principles.\n2.  Customer Success Story: Showcase how \"90% of Fortune 50 companies\" leverage Streamlit beyond text testimonials.\n3.  Onboarding Guide: Clarify the \"Get started in under a minute\" paths (local, playground, cloud) for new users.\n\nThese videos would significantly enhance clarity. Would you be open to a brief chat?\n\nBest,\n[Your Name]",
+  "word_count": 105
+}

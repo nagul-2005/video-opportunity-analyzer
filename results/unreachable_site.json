@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "website_url": "https://this-domain-does-not-exist-at-all-987654321.com",
+  "error_message": "Could not read homepage (https://this-domain-does-not-exist-at-all-987654321.com): Connection failed (DNS resolution error, refused connection, or host unreachable)",
+  "company_name": "Unknown",
+  "existing_videos_found": false,
+  "existing_video_summary": "Analysis aborted: site could not be accessed.",
+  "suggestions": [],
+  "outreach_email": "",
+  "word_count": 0
+}
