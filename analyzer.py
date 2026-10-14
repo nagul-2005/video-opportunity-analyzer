@@ -20,7 +20,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 # Configure terminal encoding for cross-platform compatibility
 if hasattr(sys.stdout, "reconfigure"):
@@ -60,6 +60,11 @@ class VideoOpportunityReport(BaseModel):
         if len(words) == 0:
             raise ValueError("Outreach email cannot be empty.")
         return v
+
+    @model_validator(mode="after")
+    def sync_word_count(self) -> "VideoOpportunityReport":
+        self.word_count = len(self.outreach_email.strip().split())
+        return self
 
 
 class ErrorReport(BaseModel):
@@ -224,10 +229,12 @@ def run_gemini_analysis(data: dict, api_key: str, model_name: str = "gemini-2.5-
     from google.genai import types
 
     client = genai.Client(api_key=api_key)
+    
+    # REPLACE YOUR PROMPT WITH THIS:
     prompt = f"""You are an expert B2B video marketing strategist.
 Analyze this company's website copy and DOM video presence:
 
-COMPANY: {data['company_name']}
+RAW PAGE TITLE: {data['company_name']}
 URL: {data['target_url']}
 EXISTING VIDEOS DETECTED IN DOM: {data['has_videos']} (Details: {data['all_videos']})
 
@@ -235,30 +242,23 @@ WEBSITE TEXT:
 {data['context']}
 
 RULES:
-1. STRICT GROUNDING: Never invent features. Every suggestion must cite a verbatim quote from the website in 'observed_site_quote'.
-2. Exactly 3 high-impact video ideas where visual video is missing.
-3. Outreach email MUST strictly be UNDER 120 words (aim for 80-100 words).
+1. COMPANY NAME: Extract only the clean brand name for 'company_name' (e.g., 'BHIVE Workspace'), stripping out SEO keywords or taglines from the raw page title.
+2. STRICT GROUNDING: Never invent features. Every suggestion must cite a verbatim quote from the website in 'observed_site_quote'.
+3. CONTEXT-AWARE RATIONALE: Generate 3 high-impact video ideas where visual video is missing. In each 'rationale', explicitly state that the target section currently relies only on static text/images. If existing videos were detected on the site, briefly explain why this specific section still has a visual gap.
+4. OUTREACH EMAIL: Must be strictly UNDER 120 words (aim for 85-105 words) and MUST explicitly pitch all 3 suggested video concepts in the email body.
 """
+
     response = client.models.generate_content(
         model=model_name,
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
             response_schema=VideoOpportunityReport,
-            temperature=0.2,
+            temperature=0.3,
         ),
     )
-    result = json.loads(response.text)
-    email, count = ensure_email_word_count(result.get("outreach_email", ""))
-    result["outreach_email"] = email
-    result["word_count"] = count
-    result["website_url"] = data["target_url"]
-    result["existing_videos_found"] = data["has_videos"]
-    result["existing_video_summary"] = (
-        f"Detected {len(data['all_videos'])} video(s): {', '.join(data['all_videos'][:3])}"
-        if data["has_videos"] else "No video elements found in DOM."
-    )
-    return VideoOpportunityReport(**result)
+    
+    return VideoOpportunityReport.model_validate_json(response.text)
 
 
 def run_mock_grounded_analysis(data: dict) -> VideoOpportunityReport:
