@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "company_name": "Wilmarcs",
+  "website_url": "https://www.wilmarcs.com/",
+  "existing_videos_found": true,
+  "existing_video_summary": "Detected 4 video element(s): Native HTML5 <video> element (src: https://manage.wilmarcs.com/assets/web/banner.mp4) on https://www.wilmarcs.com/; Native HTML5 <video> element (src: https://manage.wilmarcs.com/assets/web/banner-mob.mp4) on https://www.wilmarcs.com/; Native HTML5 <video> element (src: https://manage.wilmarcs.com/assets/web/services-banner.mp4) on https://www.wilmarcs.com/; Native HTML5 <video> element (src: https://manage.wilmarcs.com/assets/web/earth.mp4) on https://www.wilmarcs.com/",
+  "suggestions": [
+    {
+      "video_type": "Company Story / 'Why Us' Explainer",
+      "placement": "About Us page (https://www.wilmarcs.com/about-our-team) and Homepage hero section",
+      "rationale": "Wilmarcs has a compelling origin story and clear differentiators ('Fast. Cinematic. Transparent.'). A dedicated video would visually articulate their journey from a small crew to a global studio, humanizing the brand and reinforcing their core values, which are currently conveyed only through text. This would build trust and connection with potential clients.",
+      "observed_site_quote": "Our Story From a small vision in 2016 to a global cinematic studio. Wilmarcs Motion Pictures began in 2016 as a small Bangalore-based crew united by one belief, that storytelling should feel cinematic, no matter the scale."
+    },
+    {
+      "video_type": "Service Explainer (Animation & Motion)",
+      "placement": "Animation & Motion services page (https://www.wilmarcs.com/services/animation-motion)",
+      "rationale": "As a video production company specializing in 'Animation & Motion', Wilmarcs should leverage video to showcase its own capabilities. An animated explainer for this specific service would not only clarify complex offerings like 'Tech / Medical Visualization' but also serve as a direct, high-quality example of their work, proving their expertise in the very service they are selling. This bridges the gap between describing and demonstrating their skill.",
+      "observed_site_quote": "Animation & Motion 2D and 3D explainers, product visualizations, motion titles, medical and tech animations — precision built for visual clarity and style."
+    },
+    {
+      "video_type": "Client Testimonial / Case Study Video",
+      "placement": "Homepage, Clients section, and dedicated Case Studies page (if created)",
+      "rationale": "Wilmarcs features strong written testimonials from notable clients like Himalaya Wellness, Tesco, and Akshaya Patra Foundation. While effective, converting these powerful text testimonials into video format would significantly boost credibility, authenticity, and persuasive power, directly addressing potential clients' need for social proof and trust. This also demonstrates a service Wilmarcs offers to its clients.",
+      "observed_site_quote": "What Our Clients Say “Despite heavy rains during our Mangrove project, the Wilmarcs crew stayed calm and prepared. Permissions, safety and backups were all in place. The final film looked beautiful and landed on schedule. True professionalism.” Jacob, Himalaya Wellness Company"
+    }
+  ],
+  "outreach_email": "Subject: Enhancing Wilmarcs' Impact with Strategic Video\n\nHi [Decision Maker Name],\n\nI'm [My Name] from [My Agency], a B2B video marketing specialist. I admire Wilmarcs' cinematic work and global growth.\n\nYour site effectively details your services, yet I see a chance to amplify your unique value. While your current background videos are sleek, imagine dedicated content that:\n\n1. Visually narrates \"Our Story\" from 2016 to global studio.\n2. Showcases your \"Animation & Motion\" expertise via an explainer.\n3. Transforms client praise (e.g., Himalaya Wellness) into powerful video testimonials.\n\nThese would vividly demonstrate your \"Fast. Cinematic. Transparent.\" promise. Worth a quick chat next week?\n\nBest,\n[My Name]",
+  "word_count": 106
+}
