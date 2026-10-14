@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "website_url": "https://www.zillow.com",
+  "error_message": "Connection failed: 403 Client Error: Forbidden for url: https://www.zillow.com/",
+  "company_name": "Unknown",
+  "existing_videos_found": false,
+  "existing_video_summary": "Analysis aborted: site could not be accessed.",
+  "suggestions": [],
+  "outreach_email": "",
+  "word_count": 0
+}
